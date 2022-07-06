@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 1000px;
+    margin: auto;
+}
+.row{
+    width: 100%;
+    border: 1px solid #f00;
+    height: 200px;
+    margin: 5px;
+}
+
+.two-column-container{
+    display: flex;            
+    flex-flow: row wrap;
+}
+.container > .row1{
+    
+    width: 100%;
+    /* border: 1px solid #f00; */
+    height: 60px;
+    margin: 5px;
+}
+
+header{
+    display: inline-flex;}
+
+ul {
+    display:inline-flex
+    margin: 0px;
+    padding: 5px;
+    margin-top: 19px;
+    
+
+}
+
+ ul li{
+    display:inline-block
+    
+    }
+
+    ul li a{
+        padding: 5px;
+        color:gray;
+    }
+    ul li a:hover{
+        background-color:white;
+    color:rgb(87, 4, 241);
+    }  
+    ul li c:hover{
+        background-color:rgb(128, 120, 120);
+    }
+    
+    
+    
+/* 
+
+    .container > .section-3-row{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        border: 1px solid #f00;
+            margin: 5px
+    }
+
+    .centered {
+              position: absolute;
+              fle
+        padding: 130px;
+        padding-left: 110px;
+        top: 5%;
+        left: 10px;
+ 
+    .box {
+        display: flex;
+      }
+
+      .box > .bottom-left {
+        flex: 1 1 auto;
+      }
+
+      .box >   .two {
+        flex: 1 1 auto;
+      }
+
+    .box > .one {
+        flex: 1 1 auto;
+      } */
+
+      /* .section-2-row-Img{
+          display: flex
+          width: 1000px;
+      }
+      .section-3-coloum-01{
+          position: absolute
+      } */
+      .section-3-row{
+        display: flex;
+        align-items: left;
+      }
+
+      /* .one {
+        flex: 1 1 auto;
+      }
+
+      .two {
+        flex: 1 1 auto;
+      }
+
+      .three {
+        flex: 1 1 auto;
+      } */
+      .container {
+        position: left;
+        text-align: left;
+        color: white;
+      }
+      .container > .For-Text01 {
+          
+        position: absolute; 
+        /* padding-right: 380;  */
+        border-color: black;
+        color:rgb(255, 247, 247);
+        font-size: 50px;
+        font-style:bold;
+        text-align: left;
+        margin-right: 380px;
+        margin-top: 10px;
+}
+.container > .For-Text02 {
+    position: absolute; 
+    /* padding-right: 380;  */
+    border-color: black;
+    color:rgb(255, 247, 247);
+    font-size: 50px;
+    font-style:bold;
+    text-align: left;
+    margin-right: 0px;
+    margin-top: 100px;
+
+  .section-6 {
+      display: flex;
+
+
+    }
