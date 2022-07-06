@@ -1,0 +1,37 @@
+
+    function getCandidateList(uint256 voterAadharNumber)
+        public
+        view
+        returns (Candidate[] memory)
+    {
+        Voter storage voter_ = voter[voterAadharNumber];
+        uint256 _politicianOfMyConstituencyLength = 0;
+        for (uint256 i = 0; i < candidates.length; i++) {
+            if (
+                voter_.stateCode == candidates[i].stateCode &&
+                voter_.constituencyCode == candidates[i].constituencyCode
+            ) _politicianOfMyConstituencyLength++;
+        }
+        Candidate[] memory cc = new Candidate[](
+            _politicianOfMyConstituencyLength
+        );
+        uint256 _indx = 0;
+        for (uint256 i = 0; i < candidates.length; i++) {
+            if (
+                voter_.stateCode == candidates[i].stateCode &&
+                voter_.constituencyCode == candidates[i].constituencyCode
+            ) {
+                cc[_indx] = Candidate({
+                    name: candidates[i].name,
+                    partyShortcut: candidates[i].partyShortcut,
+                    partyFlag: candidates[i].partyFlag,
+                    voteCount: 0,
+                    nominationNo: candidates[i].nominationNo,
+                    stateCode: candidates[i].stateCode,
+                    constituencyCode: candidates[i].constituencyCode
+                });
+                _indx++;
+            }
+        }
+        return cc;
+    }
